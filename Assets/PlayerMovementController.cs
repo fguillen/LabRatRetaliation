@@ -23,40 +23,40 @@ public class PlayerMovementController : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Vector2 newPosition =
-        //     new Vector2(
-        //         transform.position.x + (direction * speed * Time.deltaTime),
-        //         transform.position.y
-        //     );
-        // rb.MovePosition(newPosition);
+        if(!jumping)
+            MoveBaseOnDirection();
     }
-
 
     void OnMove(InputValue value)
     {
         Debug.Log($"XXX: move: {value.Get()}");
         direction = value.Get<float>();
-    jumping = false;
-  }
+    }
 
     void OnJump()
     {
         Debug.Log("XXX: Jump");
-        rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-        jumping = true;
-    }
 
-    void OnDuck(InputValue value)
-    {
-        Debug.Log($"XXX: Duck: {value.Get()}");
-        Debug.Log($"XXX: DuckIsPressed?: {value.isPressed}");
+        if(jumping) return;
+
+        rb.velocity = Vector2.zero;
+        rb.AddForce(new Vector2(direction * speed, jumpForce), ForceMode2D.Impulse);
+        jumping = true;
     }
 
     void OnCollisionEnter2D(Collision2D collisionInfo)
     {
-        if(collisionInfo.gameObject.compareTag("floor"))
-        {
+        if(collisionInfo.gameObject.CompareTag("Floor"))
+            jumping = false;
+    }
 
-        }
+    void MoveBaseOnDirection()
+    {
+        Vector2 newPosition =
+            new Vector2(
+                transform.position.x + (direction * speed * Time.deltaTime),
+                transform.position.y
+            );
+        rb.MovePosition(newPosition);
     }
 }
