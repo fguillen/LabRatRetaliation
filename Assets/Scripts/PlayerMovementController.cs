@@ -69,5 +69,6 @@ public class PlayerMovementController : MonoBehaviour
         Debug.Log("XXX: ExecuteJump");
         rb.velocity = Vector2.zero;
         rb.AddForce(new Vector2(direction * speed, jumpForce), ForceMode2D.Impulse);
+        onFloor = false;
     }
 }
