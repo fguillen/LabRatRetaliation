@@ -8,7 +8,7 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float jumpForce;
     float direction;
-    bool jumping;
+    [SerializeField]  bool onFloor;
     Rigidbody2D rb;
 
     void Awake()
@@ -19,11 +19,12 @@ public class PlayerMovementController : MonoBehaviour
     void Start()
     {
         direction = 0;
+        onFloor = false;
     }
 
     void FixedUpdate()
     {
-        if(!jumping)
+        if(onFloor)
             MoveBaseOnDirection();
     }
 
@@ -37,17 +38,20 @@ public class PlayerMovementController : MonoBehaviour
     {
         Debug.Log("XXX: Jump");
 
-        if(jumping) return;
-
-        rb.velocity = Vector2.zero;
-        rb.AddForce(new Vector2(direction * speed, jumpForce), ForceMode2D.Impulse);
-        jumping = true;
+        if(onFloor)
+            ExecuteJump();
     }
 
     void OnCollisionEnter2D(Collision2D collisionInfo)
     {
         if(collisionInfo.gameObject.CompareTag("Floor"))
-            jumping = false;
+            onFloor = true;
+    }
+
+    void OnCollisionExit2D(Collision2D collisionInfo)
+    {
+        if(collisionInfo.gameObject.CompareTag("Floor"))
+            onFloor = false;
     }
 
     void MoveBaseOnDirection()
@@ -58,5 +62,12 @@ public class PlayerMovementController : MonoBehaviour
                 transform.position.y
             );
         rb.MovePosition(newPosition);
+    }
+
+    void ExecuteJump()
+    {
+        Debug.Log("XXX: ExecuteJump");
+        rb.velocity = Vector2.zero;
+        rb.AddForce(new Vector2(direction * speed, jumpForce), ForceMode2D.Impulse);
     }
 }
