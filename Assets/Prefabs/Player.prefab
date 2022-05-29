@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6555340168225921303}
   - component: {fileID: 6555340168225921302}
   - component: {fileID: 6555340168225921288}
-  - component: {fileID: 6555340168225921289}
+  - component: {fileID: 1976610191}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -91,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   jumpForce: 20
+  onFloor: 0
 --- !u!50 &6555340168225921288
 Rigidbody2D:
   serializedVersion: 4
@@ -110,10 +111,10 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
---- !u!70 &6555340168225921289
-CapsuleCollider2D:
+--- !u!58 &1976610191
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -125,9 +126,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5, y: 1}
-  m_Direction: 0
+  m_Offset: {x: 0.15, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.16
 --- !u!1 &6555340168686821923
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,7 +231,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: -8653667151750571767, guid: f160c2ff1a3a4403ebdda4ee4b2961c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
