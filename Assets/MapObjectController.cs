@@ -11,8 +11,11 @@ public class MapObjectController : MonoBehaviour
     int screenIndex;
     float positionXRight;
     float positionXLeft;
+    float positionXInitial;
+    float positionXFinal;
     bool alive;
     int direction;
+
 
     void Awake()
     {
@@ -27,19 +30,35 @@ public class MapObjectController : MonoBehaviour
     void Update()
     {
         if(alive)
-            transform.Translate(direction * speed * Time.deltaTime, 0, 0);
+        {
+            Move();
+            CheckIfPositionFinalReached();
+        }
+    }
+
+    void Move()
+    {
+        transform.Translate(direction * speed * Time.deltaTime, 0, 0);
+    }
+
+    void CheckIfPositionFinalReached()
+    {
+        if(Mathf.Abs(transform.position.x - positionXFinal) < 0.1)
+            transform.position = new Vector2(positionXInitial, transform.position.y);
     }
 
     public void Spawn(string side)
     {
-        float positionX = side == "left" ? positionXLeft : positionXRight;
+        positionXInitial = side == "left" ? positionXLeft : positionXRight;
+        positionXFinal = side == "left" ? positionXRight : positionXLeft;
         direction = side == "left" ? 1 : -1;
-        transform.position = new Vector2(positionX, transform.position.y);
+        transform.position = new Vector2(positionXInitial, transform.position.y);
         alive = true;
     }
 
     public void Stop()
     {
+        transform.position = originalPosition;
         alive = false;
     }
 }
