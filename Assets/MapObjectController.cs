@@ -15,6 +15,7 @@ public class MapObjectController : MonoBehaviour
     float positionXFinal;
     bool alive;
     int direction;
+    Rigidbody2D rb;
 
 
     void Awake()
@@ -25,20 +26,16 @@ public class MapObjectController : MonoBehaviour
         positionXRight = (screenIndex * screenUnits) + screenUnits + 1;
 
         alive = false;
+
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
         if(alive)
         {
-            Move();
             CheckIfPositionFinalReached();
         }
-    }
-
-    void Move()
-    {
-        transform.Translate(direction * speed * Time.deltaTime, 0, 0);
     }
 
     void CheckIfPositionFinalReached()
@@ -53,12 +50,16 @@ public class MapObjectController : MonoBehaviour
         positionXFinal = side == "left" ? positionXRight : positionXLeft;
         direction = side == "left" ? 1 : -1;
         transform.position = new Vector2(positionXInitial, transform.position.y);
+        rb.velocity = new Vector2(direction * speed, 0);
+
         alive = true;
     }
 
     public void Stop()
     {
         transform.position = originalPosition;
+        rb.velocity = Vector2.zero;
+
         alive = false;
     }
 }

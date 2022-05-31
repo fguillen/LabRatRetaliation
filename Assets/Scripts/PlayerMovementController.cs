@@ -32,14 +32,11 @@ public class PlayerMovementController : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        Debug.Log($"XXX: move: {value.Get()}");
         direction = value.Get<float>();
     }
 
     void OnJump()
     {
-        Debug.Log("XXX: Jump");
-
         if(onFloor)
             ExecuteJump();
     }
@@ -58,17 +55,11 @@ public class PlayerMovementController : MonoBehaviour
 
     void MoveBaseOnDirection()
     {
-        Vector2 newPosition =
-            new Vector2(
-                transform.position.x + (direction * speed * Time.deltaTime),
-                transform.position.y
-            );
-        rb.MovePosition(newPosition);
+        rb.velocity = new Vector2(direction * speed, 0);
     }
 
     void ExecuteJump()
     {
-        Debug.Log("XXX: ExecuteJump");
         rb.velocity = Vector2.zero;
         rb.AddForce(new Vector2(direction * speed, jumpForce), ForceMode2D.Impulse);
         onFloor = false;
