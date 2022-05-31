@@ -210,6 +210,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1612,6 +1613,69 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      LaboratoryTiles_8: -7416278741195940176
+      LaboratoryTiles_14: -8378117420822694498
+      LaboratoryTiles_46: -4035732145376636936
+      LaboratoryTiles_9: -363922603067972470
+      LaboratoryTiles_17: -338047236369088134
+      LaboratoryTiles_53: 1159168742680753817
+      LaboratoryTiles_55: -8092428545228389657
+      LaboratoryTiles_16: 2455881009819915165
+      LaboratoryTiles_39: 2071144535138251481
+      LaboratoryTiles_7: -127831398468725563
+      LaboratoryTiles_56: 1629651075015968008
+      LaboratoryTiles_29: -6889541826326092140
+      LaboratoryTiles_27: 6098249033178970443
+      LaboratoryTiles_12: 6650578285498354028
+      LaboratoryTiles_24: -2966486071433408528
+      LaboratoryTiles_18: 2923772644251901883
+      LaboratoryTiles_38: 3301868126279508973
+      LaboratoryTiles_61: 813217006399218235
+      LaboratoryTiles_26: -357256044241766948
+      LaboratoryTiles_31: 68538655060499075
+      LaboratoryTiles_49: 7565821887779450533
+      LaboratoryTiles_23: 3883150845615017574
+      LaboratoryTiles_11: 7658130651961641931
+      LaboratoryTiles_45: -3574828595445397215
+      LaboratoryTiles_6: 4750631320066085768
+      LaboratoryTiles_21: 6521617618162988824
+      LaboratoryTiles_20: -4983387343491440284
+      LaboratoryTiles_28: -7353152796174234342
+      LaboratoryTiles_34: 4404150663853007732
+      LaboratoryTiles_3: 3441739295835242317
+      LaboratoryTiles_19: -7464995997841111353
+      LaboratoryTiles_25: 8833315083521783459
+      LaboratoryTiles_37: -6557889053832361239
+      LaboratoryTiles_40: 25330647185727487
+      LaboratoryTiles_41: -4007942131766310589
+      LaboratoryTiles_30: -4541830062545092675
+      LaboratoryTiles_52: 4523599700864740268
+      LaboratoryTiles_0: -372266977417209376
+      LaboratoryTiles_10: 5187195391629017974
+      LaboratoryTiles_22: -285377424886116183
+      LaboratoryTiles_60: 631881716219161218
+      LaboratoryTiles_42: 8328584219054325756
+      LaboratoryTiles_15: 1690113825459335695
+      LaboratoryTiles_32: 2952068736211328681
+      LaboratoryTiles_43: 5159696171640155349
+      LaboratoryTiles_59: 171003056095050883
+      LaboratoryTiles_57: 6288015141265886694
+      LaboratoryTiles_33: -7140938796741740014
+      LaboratoryTiles_36: -8373624551324146941
+      LaboratoryTiles_2: 5995897325152266971
+      LaboratoryTiles_1: -4190030622363963490
+      LaboratoryTiles_13: -8860714454415002668
+      LaboratoryTiles_44: 645828160741019320
+      LaboratoryTiles_4: 3820609943249719012
+      LaboratoryTiles_51: -6987355812384143910
+      LaboratoryTiles_5: -1177996538598853397
+      LaboratoryTiles_48: 739922550405010941
+      LaboratoryTiles_54: 8721176288524921763
+      LaboratoryTiles_47: 3806713483316850098
+      LaboratoryTiles_58: 3341619427608130946
+      LaboratoryTiles_35: -3819956824763037449
+      LaboratoryTiles_50: -8249266747560341396
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

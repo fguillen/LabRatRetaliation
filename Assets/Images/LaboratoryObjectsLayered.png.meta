@@ -348,6 +348,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -2716,6 +2717,115 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      LaboratoryObjectsLayered_6: 5656063019766526750
+      LaboratoryObjectsLayered_9: -295693412443262214
+      LaboratoryObjectsLayered_79: -4897385520878676389
+      LaboratoryObjectsLayered_78: 3612552701987963928
+      LaboratoryObjectsLayered_84: 4305034501725955787
+      LaboratoryObjectsLayered_69: -3807589708938380186
+      LaboratoryObjectsLayered_90: -5280511448395283781
+      LaboratoryObjectsLayered_100: -7945115889669651791
+      LaboratoryObjectsLayered_103: 5325057947545127613
+      LaboratoryObjectsLayered_8: -2177377169986573028
+      LaboratoryObjectsLayered_58: 4553485427827994028
+      LaboratoryObjectsLayered_82: 8977106388961470956
+      LaboratoryObjectsLayered_83: -5824821089876120371
+      LaboratoryObjectsLayered_5: 3517342326071841962
+      LaboratoryObjectsLayered_104: 248527657208789794
+      LaboratoryObjectsLayered_43: -736665697841769778
+      LaboratoryObjectsLayered_87: 8482892249051933841
+      LaboratoryObjectsLayered_29: 3973126682086019625
+      LaboratoryObjectsLayered_37: 4683500992552206994
+      LaboratoryObjectsLayered_7: -862900119226840102
+      LaboratoryObjectsLayered_59: -3314470243058676269
+      LaboratoryObjectsLayered_106: 3847181047144698900
+      LaboratoryObjectsLayered_13: 5168973109986296181
+      LaboratoryObjectsLayered_28: 423723054633932410
+      LaboratoryObjectsLayered_27: -2046233880460440755
+      LaboratoryObjectsLayered_31: -3750129424114952941
+      LaboratoryObjectsLayered_16: -7481366842954158317
+      LaboratoryObjectsLayered_24: 2067900624786581373
+      LaboratoryObjectsLayered_4: -7051301745593245591
+      LaboratoryObjectsLayered_50: -7724035746169128107
+      LaboratoryObjectsLayered_97: 9178752298416741223
+      LaboratoryObjectsLayered_48: 6471550914169957810
+      LaboratoryObjectsLayered_62: -3135341625626401913
+      LaboratoryObjectsLayered_65: -7260104037237678951
+      LaboratoryObjectsLayered_102: -8458791757256275420
+      LaboratoryObjectsLayered_25: -8093748988355688404
+      LaboratoryObjectsLayered_30: 3328831700600987761
+      LaboratoryObjectsLayered_36: -5829327304014037683
+      LaboratoryObjectsLayered_76: -5364233912341217064
+      LaboratoryObjectsLayered_34: 1464837775781763151
+      LaboratoryObjectsLayered_61: -2918615175048867254
+      LaboratoryObjectsLayered_10: -1851681224298296609
+      LaboratoryObjectsLayered_0: -6707385295829607046
+      LaboratoryObjectsLayered_53: 5244728135434109241
+      LaboratoryObjectsLayered_95: 5103056866285569707
+      LaboratoryObjectsLayered_18: -7042037483559971270
+      LaboratoryObjectsLayered_98: 5769176972945612004
+      LaboratoryObjectsLayered_92: -5615518305032338191
+      LaboratoryObjectsLayered_81: 3652195682568125493
+      LaboratoryObjectsLayered_21: 3204483948387336441
+      LaboratoryObjectsLayered_19: 4959229027481779969
+      LaboratoryObjectsLayered_89: -4498435896841100665
+      LaboratoryObjectsLayered_20: 8789474196953411732
+      LaboratoryObjectsLayered_41: -5640105601226725240
+      LaboratoryObjectsLayered_85: 6384833556012997029
+      LaboratoryObjectsLayered_75: -8819648908831020300
+      LaboratoryObjectsLayered_96: -2794372358369664784
+      LaboratoryObjectsLayered_72: 4271969286228525328
+      LaboratoryObjectsLayered_47: 2454791550114933410
+      LaboratoryObjectsLayered_86: -4010822799781055419
+      LaboratoryObjectsLayered_56: 6992810205588092614
+      LaboratoryObjectsLayered_46: 411238073391716992
+      LaboratoryObjectsLayered_52: 5572214990580214889
+      LaboratoryObjectsLayered_67: 7805054144694672690
+      LaboratoryObjectsLayered_73: 7294265560672387002
+      LaboratoryObjectsLayered_101: -4894851539990609051
+      LaboratoryObjectsLayered_15: 2225612493549860409
+      LaboratoryObjectsLayered_38: -6922523845828167283
+      LaboratoryObjectsLayered_88: 486235910938768174
+      LaboratoryObjectsLayered_22: 3056784051258614895
+      LaboratoryObjectsLayered_99: -7474628821858484723
+      LaboratoryObjectsLayered_49: 5754416582539025581
+      LaboratoryObjectsLayered_60: 4558922357614520890
+      LaboratoryObjectsLayered_2: 1447474044188371626
+      LaboratoryObjectsLayered_17: 8919183545062124518
+      LaboratoryObjectsLayered_107: 151830576281643356
+      LaboratoryObjectsLayered_32: 8904032570123789385
+      LaboratoryObjectsLayered_64: 1117607813440880868
+      LaboratoryObjectsLayered_66: -4938266925919070830
+      LaboratoryObjectsLayered_57: -8912973615148233066
+      LaboratoryObjectsLayered_77: 6428884960194263344
+      LaboratoryObjectsLayered_55: -8310268893880917757
+      LaboratoryObjectsLayered_91: -8158851381633014057
+      LaboratoryObjectsLayered_93: 5053157892340230609
+      LaboratoryObjectsLayered_94: 6079637129578294408
+      LaboratoryObjectsLayered_40: 7033634176937102792
+      LaboratoryObjectsLayered_1: -3949791569655802980
+      LaboratoryObjectsLayered_3: -2992580254095773513
+      LaboratoryObjectsLayered_70: -6866661583208821128
+      LaboratoryObjectsLayered_14: 5444984384375757580
+      LaboratoryObjectsLayered_39: 72711519915729208
+      LaboratoryObjectsLayered_23: 2106923044177027160
+      LaboratoryObjectsLayered_35: 1409825942496240789
+      LaboratoryObjectsLayered_51: 2711281432132356003
+      LaboratoryObjectsLayered_105: -7110699924329026445
+      LaboratoryObjectsLayered_54: 7274991414418995531
+      LaboratoryObjectsLayered_11: -1589220205624200420
+      LaboratoryObjectsLayered_71: -2399030721419211872
+      LaboratoryObjectsLayered_74: -4088809920005632633
+      LaboratoryObjectsLayered_12: 8269283594848296578
+      LaboratoryObjectsLayered_26: -195407387478189642
+      LaboratoryObjectsLayered_33: 1326475834250911938
+      LaboratoryObjectsLayered_45: -3074516565146839616
+      LaboratoryObjectsLayered_44: 8074287193748992764
+      LaboratoryObjectsLayered_63: 3239955730722287175
+      LaboratoryObjectsLayered_42: 8326628030051370210
+      LaboratoryObjectsLayered_80: -5534675518186885798
+      LaboratoryObjectsLayered_68: -1051523494453408119
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

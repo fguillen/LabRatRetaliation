@@ -25,6 +25,7 @@ ScriptedImporter:
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
     vTOnly: 0
+    ignoreMasterTextureLimit: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -79,7 +80,6 @@ ScriptedImporter:
       width: 0
       height: 0
     spriteID: 
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -103,7 +103,6 @@ ScriptedImporter:
       width: 16
       height: 6
     spriteID: c354d3476b48a4b1eb871cf4e791f290
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -125,7 +124,6 @@ ScriptedImporter:
       width: 16
       height: 6
     spriteID: 2ebc7503869944689ad3dacf9dfeadf1
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -147,7 +145,6 @@ ScriptedImporter:
       width: 16
       height: 16
     spriteID: f20c56c539e9c4f73a8817d7d747c327
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -157,6 +154,19 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
@@ -203,21 +213,19 @@ ScriptedImporter:
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
   mosaicLayers: 1
+  characterMode: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
-  importedTextureWidth: 32
-  importedTextureHeight: 64
-  documentSize: {x: 16, y: 16}
+  layerMappingOption: 2
+  generatePhysicsShape: 0
   paperDollMode: 0
   keepDupilcateSpriteName: 0
+  skeletonAssetReferenceID: 
   spriteCategoryList:
     categories: []
-  textureActualWidth: 32
-  textureActualHeight: 64
   spritePackingTag: 
   resliceFromLayer: 0
-  characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
   - name: Walking_02
@@ -227,6 +235,9 @@ ScriptedImporter:
     spriteID: c354d3476b48a4b1eb871cf4e791f290
     layerID: 5
     mosaicPosition: {x: 4, y: 28}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Walking_01
     spriteName: Walking_01
     isGroup: 0
@@ -234,6 +245,9 @@ ScriptedImporter:
     spriteID: 2ebc7503869944689ad3dacf9dfeadf1
     layerID: 2
     mosaicPosition: {x: 4, y: 42}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Layer 0
     spriteName: Layer 0
     isGroup: 0
@@ -241,13 +255,14 @@ ScriptedImporter:
     spriteID: f20c56c539e9c4f73a8817d7d747c327
     layerID: 3
     mosaicPosition: {x: 4, y: 4}
-  characterData:
-    bones: []
-    parts: []
-    dimension: {x: 0, y: 0}
-    characterGroups: []
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
   generateGOHierarchy: 0
   textureAssetName: Rat Texture
   prefabAssetName: Rat Prefab
   spriteLibAssetName: Rat Sprite Lib
+  skeletonAssetName: 
   secondarySpriteTextures: []
