@@ -27,7 +27,7 @@ public class MapObjectController : MonoBehaviour
     void Update()
     {
         if(alive)
-            transform.position = new Vector2(transform.position.x + (direction * speed * Time.deltaTime), transform.position.y);
+            transform.Translate(direction * speed * Time.deltaTime, 0, 0);
     }
 
     public void Spawn(string side)

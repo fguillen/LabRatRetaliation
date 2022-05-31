@@ -6,14 +6,16 @@ using UnityEngine.InputSystem;
 public class PlayerMovementController : MonoBehaviour
 {
     [SerializeField] float speed;
-    [SerializeField] float jumpForce;
+    [SerializeField] float jumpHeight;
     float direction;
     [SerializeField]  bool onFloor;
     Rigidbody2D rb;
+    float jumpForce;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        jumpForce = Mathf.Sqrt(jumpHeight * -2 * (Physics2D.gravity.y * rb.gravityScale));
     }
 
     void Start()
