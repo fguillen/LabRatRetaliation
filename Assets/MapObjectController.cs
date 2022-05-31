@@ -5,6 +5,7 @@ using UnityEngine;
 public class MapObjectController : MonoBehaviour
 {
     [SerializeField] float speed;
+    [SerializeField] float stunnedTime;
 
     int screenUnits = 12;
     Vector2 originalPosition;
@@ -49,8 +50,7 @@ public class MapObjectController : MonoBehaviour
         positionXInitial = side == "left" ? positionXLeft : positionXRight;
         positionXFinal = side == "left" ? positionXRight : positionXLeft;
         direction = side == "left" ? 1 : -1;
-        transform.position = new Vector2(positionXInitial, transform.position.y);
-        rb.velocity = new Vector2(direction * speed, 0);
+        StartInInitialPosition();
 
         alive = true;
     }
@@ -61,5 +61,22 @@ public class MapObjectController : MonoBehaviour
         rb.velocity = Vector2.zero;
 
         alive = false;
+    }
+
+    void MoveToFinalPosition()
+    {
+        transform.position = new Vector2(positionXFinal, transform.position.y);
+    }
+
+    void StartInInitialPosition()
+    {
+        transform.position = new Vector2(positionXInitial, transform.position.y);
+        rb.velocity = new Vector2(direction * speed, 0);
+    }
+
+    public void Hit()
+    {
+        rb.velocity = Vector2.zero;
+        Invoke("StartInInitialPosition", stunnedTime);
     }
 }

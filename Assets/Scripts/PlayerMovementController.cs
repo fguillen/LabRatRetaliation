@@ -7,14 +7,17 @@ public class PlayerMovementController : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] float jumpHeight;
-    float direction;
+    int direction;
     [SerializeField]  bool onFloor;
     Rigidbody2D rb;
     float jumpForce;
+    PlayerHitController playerHitController;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerHitController = GetComponent<PlayerHitController>();
+
         jumpForce = Mathf.Sqrt(jumpHeight * -2 * (Physics2D.gravity.y * rb.gravityScale));
     }
 
@@ -26,19 +29,19 @@ public class PlayerMovementController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(onFloor)
+        if(onFloor && !playerHitController.stunned)
             MoveBaseOnDirection();
     }
 
     void OnMove(InputValue value)
     {
-        direction = value.Get<float>();
+        direction = Mathf.CeilToInt(value.Get<float>());
     }
 
     void OnJump()
     {
-        if(onFloor)
-            ExecuteJump();
+        if(onFloor && !playerHitController.stunned)
+            ExecuteJump(direction);
     }
 
     void OnCollisionEnter2D(Collision2D collisionInfo)
@@ -58,10 +61,10 @@ public class PlayerMovementController : MonoBehaviour
         rb.velocity = new Vector2(direction * speed, 0);
     }
 
-    void ExecuteJump()
+    public void ExecuteJump(int _direction)
     {
         rb.velocity = Vector2.zero;
-        rb.AddForce(new Vector2(direction * speed, jumpForce), ForceMode2D.Impulse);
+        rb.AddForce(new Vector2(_direction * speed, jumpForce), ForceMode2D.Impulse);
         onFloor = false;
     }
 }
