@@ -12,11 +12,13 @@ public class PlayerMovementController : MonoBehaviour
     Rigidbody2D rb;
     float jumpForce;
     PlayerHitController playerHitController;
+    PlayerOnTheStairsController playerOnTheStairsController;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         playerHitController = GetComponent<PlayerHitController>();
+        playerOnTheStairsController = GetComponent<PlayerOnTheStairsController>();
 
         jumpForce = Mathf.Sqrt(jumpHeight * -2 * (Physics2D.gravity.y * rb.gravityScale));
     }
@@ -29,7 +31,7 @@ public class PlayerMovementController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(onFloor && !playerHitController.stunned)
+        if(onFloor && !playerHitController.stunned && !playerOnTheStairsController.onStairsWalking)
             MoveBaseOnDirection();
     }
 
@@ -40,7 +42,7 @@ public class PlayerMovementController : MonoBehaviour
 
     void OnJump()
     {
-        if(onFloor && !playerHitController.stunned)
+        if(onFloor && !playerHitController.stunned && !playerOnTheStairsController.onStairsWalking)
             ExecuteJump(direction);
     }
 

@@ -99,7 +99,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 32
+      y: 73
       width: 16
       height: 5
     spriteID: 7c2dea387617f4a988159e7b5564b86e
@@ -112,7 +112,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -28, y: -48}
+    uvTransform: {x: -28, y: -7}
   - name: Walking_02
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -121,7 +121,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 45
       width: 16
       height: 6
     spriteID: f0796f01c6dfe4078bad992af7756428
@@ -134,7 +134,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -12, y: -80}
+    uvTransform: {x: -12, y: -39}
   - name: Walking_01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -143,7 +143,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 18
+      y: 59
       width: 16
       height: 6
     spriteID: 87c3c8930bee34e22bb90906266ad09b
@@ -156,7 +156,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: -66}
+    uvTransform: {x: 4, y: -25}
   - name: Elevator
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -165,7 +165,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 45
+      y: 86
       width: 6
       height: 13
     spriteID: a10f775f60abd4dbf889f5b5e7c60fbc
@@ -178,7 +178,29 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -49, y: -35}
+    uvTransform: {x: -49, y: 6}
+  - name: Stairs
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5
+      y: 4
+      width: 43
+      height: 33
+    spriteID: 90309a63c15d84182ba1a3b6ce6c1280
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: -43}
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
@@ -228,15 +250,15 @@ ScriptedImporter:
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
-  importedTextureWidth: 32
-  importedTextureHeight: 64
+  importedTextureWidth: 64
+  importedTextureHeight: 128
   documentSize: {x: 96, y: 96}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
-  textureActualWidth: 32
-  textureActualHeight: 64
+  textureActualWidth: 64
+  textureActualHeight: 128
   spritePackingTag: 
   resliceFromLayer: 0
   characterMode: 1
@@ -248,28 +270,35 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 7c2dea387617f4a988159e7b5564b86e
     layerID: 7
-    mosaicPosition: {x: 4, y: 32}
+    mosaicPosition: {x: 4, y: 73}
   - name: Walking_02
     spriteName: Walking_02
     isGroup: 0
     parentIndex: -1
     spriteID: f0796f01c6dfe4078bad992af7756428
     layerID: 5
-    mosaicPosition: {x: 4, y: 4}
+    mosaicPosition: {x: 4, y: 45}
   - name: Walking_01
     spriteName: Walking_01
     isGroup: 0
     parentIndex: -1
     spriteID: 87c3c8930bee34e22bb90906266ad09b
     layerID: 2
-    mosaicPosition: {x: 4, y: 18}
+    mosaicPosition: {x: 4, y: 59}
   - name: Elevator
     spriteName: Elevator
     isGroup: 0
     parentIndex: -1
     spriteID: a10f775f60abd4dbf889f5b5e7c60fbc
     layerID: 12
-    mosaicPosition: {x: 4, y: 45}
+    mosaicPosition: {x: 4, y: 86}
+  - name: Stairs
+    spriteName: Stairs
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 90309a63c15d84182ba1a3b6ce6c1280
+    layerID: 15
+    mosaicPosition: {x: 4, y: 4}
   characterData:
     bones: []
     parts: []
