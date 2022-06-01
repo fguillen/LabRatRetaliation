@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerFlipDirectionController : MonoBehaviour
+public class CharacterFlipDirectionController : MonoBehaviour
 {
     Rigidbody2D rb;
     void Awake()

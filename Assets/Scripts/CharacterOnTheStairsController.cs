@@ -2,19 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Events;
 
-public class PlayerOnTheStairsController : MonoBehaviour
+[System.Serializable] public class OnTouchStairsEvent : UnityEvent<string> { }
+
+public class CharacterOnTheStairsController : MonoBehaviour
 {
     [SerializeField] float stairsSpeed;
-    [SerializeField] Collider2D theCollider;
+    Collider2D theCollider;
 
     StairsController stairsController;
-    string stairsLevel;
+    public string stairsLevel;
     bool onStairs;
     public bool onStairsWalking;
     Vector2 endPosition;
     Rigidbody2D rb;
     float originalGravityScale;
+    public OnTouchStairsEvent onTouchingStairs;
+    public UnityEvent onEndOfStairs;
 
     void Awake()
     {
@@ -22,20 +27,18 @@ public class PlayerOnTheStairsController : MonoBehaviour
         theCollider = GetComponent<Collider2D>();
 
         originalGravityScale = rb.gravityScale;
+
+        if(onTouchingStairs == null)
+            onTouchingStairs = new OnTouchStairsEvent();
+
+        if(onEndOfStairs == null)
+            onEndOfStairs = new UnityEvent();
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if(onStairsWalking)
             CheckIfStairsFinished();
-
     }
 
     void CheckIfStairsFinished()
@@ -46,6 +49,7 @@ public class PlayerOnTheStairsController : MonoBehaviour
             rb.velocity = Vector2.zero;
             theCollider.enabled = true;
             rb.gravityScale = originalGravityScale;
+            onEndOfStairs.Invoke();
         }
     }
 
@@ -84,6 +88,7 @@ public class PlayerOnTheStairsController : MonoBehaviour
         this.stairsController = stairsController;
         stairsLevel = stairsController.StairsLevel(transform.position);
         onStairs = true;
+        onTouchingStairs.Invoke(stairsLevel);
     }
 
     void OffTheStairs(StairsController stairsController)
@@ -93,7 +98,7 @@ public class PlayerOnTheStairsController : MonoBehaviour
         onStairs = false;
     }
 
-    void WalkTheStairs()
+    public void WalkTheStairs()
     {
         Debug.Log("XXX: WalkTheStairs()");
         Vector2 startPosition = stairsController.PointPosition(stairsLevel);

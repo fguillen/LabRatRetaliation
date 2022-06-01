@@ -11,7 +11,6 @@ public class ScreenController
 
     public ScreenController(int screenIndex, List<MapObjectController> mapObjects)
     {
-        Debug.Log($"XXX: Creating ScreenController. index: {screenIndex}, numObjects: {mapObjects.Count()}");
         this.mapObjects = mapObjects;
         this.ScreenIndex = screenIndex;
     }
@@ -53,7 +52,6 @@ public class ScreensController : MonoBehaviour
         int playerScreenIndex = Mathf.FloorToInt(playerTransform.position.x / screenUnits);
         if(playerScreenIndex != actualScreenIndex)
         {
-            Debug.Log($"XXX: newScreen: {playerScreenIndex}");
             var playerSide = PlayerScreenOppositeSide(playerScreenIndex, playerTransform.position.x);
             ActivateObjectsInScreenByIndex(playerSide, playerScreenIndex);
             actualScreenIndex = playerScreenIndex;
@@ -79,8 +77,6 @@ public class ScreensController : MonoBehaviour
             mapObjects.Add(item.GetComponent<MapObjectController>());
         }
 
-        Debug.Log($"XXX: Num of MapObjects: {mapObjects.Count()}");
-
         for (int i = 0; i < numScreens; i++)
         {
             var mapObjectsInTheScreen = MapObjectsInTheScreenByIndex(mapObjects, i);
@@ -93,8 +89,6 @@ public class ScreensController : MonoBehaviour
     {
         float minX = screenIndex * screenUnits;
         float maxX = minX + screenUnits;
-
-        Debug.Log($"XXX: index: {screenIndex}, X:({minX},{maxX})");
 
         return mapObjects.Where(e => e.transform.position.x > minX && e.transform.position.x < maxX).ToList();
     }
