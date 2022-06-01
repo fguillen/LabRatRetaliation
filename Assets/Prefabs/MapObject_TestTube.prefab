@@ -129,8 +129,9 @@ GameObject:
   - component: {fileID: 1882508041514261889}
   - component: {fileID: 2061930481}
   - component: {fileID: 2061930478}
-  m_Layer: 0
-  m_Name: LabProjectil
+  - component: {fileID: 4409104014491551353}
+  m_Layer: 6
+  m_Name: MapObject_TestTube
   m_TagString: MapObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -225,3 +226,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.47366905, y: 0.47872996}
   m_EdgeRadius: 0
+--- !u!114 &4409104014491551353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882508041514261902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 668c96cf12f894f8da227abd4c6260ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stunnedTime: 2
+  onRestart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1882508041514261889}
+        m_TargetAssemblyTypeName: MapObjectController, Assembly-CSharp
+        m_MethodName: StartInInitialPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

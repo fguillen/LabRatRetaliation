@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MapObjectController : MonoBehaviour
 {
@@ -17,7 +18,6 @@ public class MapObjectController : MonoBehaviour
     bool alive;
     int direction;
     Rigidbody2D rb;
-
 
     void Awake()
     {
@@ -68,15 +68,9 @@ public class MapObjectController : MonoBehaviour
         transform.position = new Vector2(positionXFinal, transform.position.y);
     }
 
-    void StartInInitialPosition()
+    public void StartInInitialPosition()
     {
         transform.position = new Vector2(positionXInitial, transform.position.y);
         rb.velocity = new Vector2(direction * speed, 0);
-    }
-
-    public void Hit()
-    {
-        rb.velocity = Vector2.zero;
-        Invoke("StartInInitialPosition", stunnedTime);
     }
 }

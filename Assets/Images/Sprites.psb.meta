@@ -321,7 +321,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -10, y: -45}
+    uvTransform: {x: -10, y: -47}
   - name: Canera relax
     originalName: 
     pivot: {x: 0.5, y: 0.5}
