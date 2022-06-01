@@ -7,7 +7,7 @@ public class CameraController : MonoBehaviour
     int screenUnits = 12;
     [SerializeField] Transform playerTransform;
 
-    void Update()
+    void LateUpdate()
     {
         int screenNumber = Mathf.FloorToInt(playerTransform.position.x / screenUnits);
         int cameraPositionX = (screenNumber * screenUnits) + (screenUnits / 2);
