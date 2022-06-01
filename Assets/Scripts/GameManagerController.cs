@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class GameManagerController : MonoBehaviour
 {
+    public static GameManagerController Instance;
+    [SerializeField] public GameObject player;
+
     void Awake()
     {
+        Instance = this;
         Application.targetFrameRate = 60;
     }
     // Start is called before the first frame update
