@@ -13,12 +13,14 @@ public class PlayerMovementController : MonoBehaviour
     float jumpForce;
     PlayerHitController playerHitController;
     PlayerOnTheStairsController playerOnTheStairsController;
+    PlayerAnimationsController playerAnimationsController;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         playerHitController = GetComponent<PlayerHitController>();
         playerOnTheStairsController = GetComponent<PlayerOnTheStairsController>();
+        playerAnimationsController = GetComponent<PlayerAnimationsController>();
 
         jumpForce = Mathf.Sqrt(jumpHeight * -2 * (Physics2D.gravity.y * rb.gravityScale));
     }
@@ -61,6 +63,11 @@ public class PlayerMovementController : MonoBehaviour
     void MoveBaseOnDirection()
     {
         rb.velocity = new Vector2(direction * speed, 0);
+
+        if(direction != 0)
+            playerAnimationsController.Walking();
+        else
+            playerAnimationsController.Idle();
     }
 
     public void ExecuteJump(int _direction)
@@ -68,5 +75,8 @@ public class PlayerMovementController : MonoBehaviour
         rb.velocity = Vector2.zero;
         rb.AddForce(new Vector2(_direction * speed, jumpForce), ForceMode2D.Impulse);
         onFloor = false;
+
+        playerAnimationsController.Jumping();
+
     }
 }

@@ -98,8 +98,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 73
+      x: 75
+      y: 45
       width: 16
       height: 5
     spriteID: 7c2dea387617f4a988159e7b5564b86e
@@ -111,7 +111,28 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -28, y: -7}
+    uvTransform: {x: 43, y: -35}
+  - name: Stunned
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 111
+      y: 4
+      width: 12
+      height: 9
+    spriteID: f733a0a5d652b4b7eac95c93483bb68d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 61, y: -28}
   - name: Walking_02
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -119,7 +140,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
+      x: 27
       y: 45
       width: 16
       height: 6
@@ -132,8 +153,50 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -12, y: -39}
-  - name: Walking_01
+    uvTransform: {x: 11, y: -39}
+  - name: Hidding
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 99
+      y: 45
+      width: 9
+      height: 6
+    spriteID: 101bb34c7cef74bb383d8254ea2b5cac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 96, y: 13}
+  - name: Doctor
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 4
+      width: 7
+      height: 20
+    spriteID: c4d08ba51cf8a49668de4a62904cee30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 92, y: 4}
+  - name: Jumping
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -141,7 +204,28 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 59
+      y: 45
+      width: 15
+      height: 9
+    spriteID: eed36b866317a488bbb2cd7adf5fac18
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -13, y: 13}
+  - name: Walking_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 45
       width: 16
       height: 6
     spriteID: 87c3c8930bee34e22bb90906266ad09b
@@ -153,7 +237,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: -25}
+    uvTransform: {x: 51, y: -39}
   - name: Elevator
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -162,7 +246,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 86
+      y: 62
       width: 6
       height: 13
     spriteID: a10f775f60abd4dbf889f5b5e7c60fbc
@@ -174,7 +258,70 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -49, y: 6}
+    uvTransform: {x: -49, y: -18}
+  - name: Atom
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 111
+      y: 21
+      width: 9
+      height: 9
+    spriteID: e2e2804b2fbbd4e4885fb6d96b9392ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 44, y: -62}
+  - name: Camera active
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 4
+      width: 12
+      height: 32
+    spriteID: 69d58a3dd7944452082cefe4837afb7f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -10, y: -45}
+  - name: Canera relax
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 4
+      width: 12
+      height: 32
+    spriteID: b86b57e7840ac477da6df449641fafc7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 26, y: -47}
   - name: Stairs
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -276,7 +423,17 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 7c2dea387617f4a988159e7b5564b86e
     layerID: 7
-    mosaicPosition: {x: 4, y: 73}
+    mosaicPosition: {x: 75, y: 45}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Stunned
+    spriteName: Stunned
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f733a0a5d652b4b7eac95c93483bb68d
+    layerID: 34
+    mosaicPosition: {x: 111, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -286,6 +443,56 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: f0796f01c6dfe4078bad992af7756428
     layerID: 5
+    mosaicPosition: {x: 27, y: 45}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Hidding
+    spriteName: Hidding
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 101bb34c7cef74bb383d8254ea2b5cac
+    layerID: 29
+    mosaicPosition: {x: 99, y: 45}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Doctor
+    spriteName: Doctor
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c4d08ba51cf8a49668de4a62904cee30
+    layerID: 33
+    mosaicPosition: {x: 96, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Screenshot 2022-06-01 at 13.53.00
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f714ddcec9342464ea3146aa3f7853a2
+    layerID: 32
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Screenshot 2022-06-01 at 13.50.57
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c5940b2607db747c2b83a54c9779f923
+    layerID: 31
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Jumping
+    spriteName: Jumping
+    isGroup: 0
+    parentIndex: -1
+    spriteID: eed36b866317a488bbb2cd7adf5fac18
+    layerID: 30
     mosaicPosition: {x: 4, y: 45}
     flatten: 0
     isImported: 1
@@ -296,50 +503,50 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 87c3c8930bee34e22bb90906266ad09b
     layerID: 2
-    mosaicPosition: {x: 4, y: 59}
+    mosaicPosition: {x: 51, y: 45}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Layer 0
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 00000000000000000000000000000000
-    layerID: 3
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
   - name: Elevator
     spriteName: Elevator
     isGroup: 0
     parentIndex: -1
     spriteID: a10f775f60abd4dbf889f5b5e7c60fbc
     layerID: 12
-    mosaicPosition: {x: 4, y: 86}
+    mosaicPosition: {x: 4, y: 62}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Layer 2
-    spriteName: 
+  - name: Atom
+    spriteName: Atom
     isGroup: 0
     parentIndex: -1
-    spriteID: 00000000000000000000000000000000
-    layerID: 10
-    mosaicPosition: {x: 0, y: 0}
+    spriteID: e2e2804b2fbbd4e4885fb6d96b9392ed
+    layerID: 28
+    mosaicPosition: {x: 111, y: 21}
     flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Layer 1
-    spriteName: 
+    isImported: 1
+    isVisible: 1
+  - name: Camera active
+    spriteName: Camera active
     isGroup: 0
     parentIndex: -1
-    spriteID: 00000000000000000000000000000000
-    layerID: 6
-    mosaicPosition: {x: 0, y: 0}
+    spriteID: 69d58a3dd7944452082cefe4837afb7f
+    layerID: 23
+    mosaicPosition: {x: 56, y: 4}
     flatten: 0
-    isImported: 0
-    isVisible: 0
+    isImported: 1
+    isVisible: 1
+  - name: Canera relax
+    spriteName: Canera relax
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b86b57e7840ac477da6df449641fafc7
+    layerID: 25
+    mosaicPosition: {x: 76, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Stairs
     spriteName: Stairs
     isGroup: 0
@@ -350,21 +557,11 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Shape 1
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 00000000000000000000000000000000
-    layerID: 17
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
   - name: Layer 3
     spriteName: 
     isGroup: 0
     parentIndex: -1
-    spriteID: 00000000000000000000000000000000
+    spriteID: c08577899dd47473791da038a880d444
     layerID: 13
     mosaicPosition: {x: 0, y: 0}
     flatten: 0

@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerOnTheStairsController : MonoBehaviour
 {
     [SerializeField] float stairsSpeed;
-    [SerializeField] Collider2D collider;
+    [SerializeField] Collider2D theCollider;
 
     StairsController stairsController;
     string stairsLevel;
@@ -19,7 +19,7 @@ public class PlayerOnTheStairsController : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        collider = GetComponent<Collider2D>();
+        theCollider = GetComponent<Collider2D>();
 
         originalGravityScale = rb.gravityScale;
     }
@@ -44,7 +44,7 @@ public class PlayerOnTheStairsController : MonoBehaviour
         {
             onStairsWalking = false;
             rb.velocity = Vector2.zero;
-            collider.enabled = true;
+            theCollider.enabled = true;
             rb.gravityScale = originalGravityScale;
         }
     }
@@ -107,6 +107,6 @@ public class PlayerOnTheStairsController : MonoBehaviour
 
         Debug.Log($"XXX: {direction}, {rb.velocity}");
         onStairsWalking = true;
-        collider.enabled = false;
+        theCollider.enabled = false;
     }
 }
