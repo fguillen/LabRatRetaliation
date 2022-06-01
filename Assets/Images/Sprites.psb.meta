@@ -98,7 +98,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 75
+      x: 92
       y: 45
       width: 16
       height: 5
@@ -111,8 +111,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 43, y: -35}
-  - name: Stunned
+    uvTransform: {x: 60, y: -35}
+  - name: Test Tube
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -121,6 +121,27 @@ ScriptedImporter:
       serializedVersion: 2
       x: 111
       y: 4
+      width: 11
+      height: 10
+    spriteID: 332267313c75148b39f80d39d6285a1a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 29, y: -77}
+  - name: Stunned
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 111
+      y: 22
       width: 12
       height: 9
     spriteID: f733a0a5d652b4b7eac95c93483bb68d
@@ -132,7 +153,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 61, y: -28}
+    uvTransform: {x: 61, y: -10}
   - name: Walking_02
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -161,8 +182,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 99
-      y: 45
+      x: 18
+      y: 62
       width: 9
       height: 6
     spriteID: 101bb34c7cef74bb383d8254ea2b5cac
@@ -174,7 +195,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 96, y: 13}
+    uvTransform: {x: 15, y: 30}
   - name: Doctor
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -266,8 +287,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 111
-      y: 21
+      x: 75
+      y: 45
       width: 9
       height: 9
     spriteID: e2e2804b2fbbd4e4885fb6d96b9392ed
@@ -279,7 +300,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 44, y: -62}
+    uvTransform: {x: 8, y: -38}
   - name: Camera active
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -423,7 +444,17 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 7c2dea387617f4a988159e7b5564b86e
     layerID: 7
-    mosaicPosition: {x: 75, y: 45}
+    mosaicPosition: {x: 92, y: 45}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Test Tube
+    spriteName: Test Tube
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 332267313c75148b39f80d39d6285a1a
+    layerID: 36
+    mosaicPosition: {x: 111, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -433,7 +464,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: f733a0a5d652b4b7eac95c93483bb68d
     layerID: 34
-    mosaicPosition: {x: 111, y: 4}
+    mosaicPosition: {x: 111, y: 22}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -453,7 +484,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 101bb34c7cef74bb383d8254ea2b5cac
     layerID: 29
-    mosaicPosition: {x: 99, y: 45}
+    mosaicPosition: {x: 18, y: 62}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -467,26 +498,6 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Screenshot 2022-06-01 at 13.53.00
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: f714ddcec9342464ea3146aa3f7853a2
-    layerID: 32
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Screenshot 2022-06-01 at 13.50.57
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: c5940b2607db747c2b83a54c9779f923
-    layerID: 31
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
   - name: Jumping
     spriteName: Jumping
     isGroup: 0
@@ -523,7 +534,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: e2e2804b2fbbd4e4885fb6d96b9392ed
     layerID: 28
-    mosaicPosition: {x: 111, y: 21}
+    mosaicPosition: {x: 75, y: 45}
     flatten: 0
     isImported: 1
     isVisible: 1
