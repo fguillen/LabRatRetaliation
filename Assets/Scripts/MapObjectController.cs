@@ -70,7 +70,7 @@ public class MapObjectController : MonoBehaviour
 
     public void StartInInitialPosition()
     {
-        transform.position = new Vector2(positionXInitial, transform.position.y);
+        transform.position = new Vector2(positionXInitial, originalPosition.y);
         rb.velocity = new Vector2(direction * speed, 0);
     }
 }

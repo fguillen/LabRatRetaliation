@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 1882508040566613720}
   - component: {fileID: 1882508040566613721}
   m_Layer: 0
-  m_Name: LaboratoryObjectsLayered_29
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
